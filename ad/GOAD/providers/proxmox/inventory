@@ -5,7 +5,7 @@
 ; sevenkingdoms.local
 ; ------------------------------------------------
 dc01 ansible_host=192.168.10.10 dns_domain=dc01 dict_key=dc01
-;ws01 ansible_host=192.168.10.30 dns_domain=dc01 dict_key=ws01
+ws01 ansible_host=192.168.10.30 dns_domain=dc01 dict_key=ws01
 ; ------------------------------------------------
 ; north.sevenkingdoms.local
 ; ------------------------------------------------
@@ -30,8 +30,8 @@ dns_server=192.168.10.1
 
 two_adapters=no
 ; adapter created by vagrant and virtualbox (comment if you use vmware)
-nat_adapter=Ethernet
-domain_adapter=Ethernet
+nat_adapter=Ethernet*
+domain_adapter=Ethernet*
 
 ; adapter created by vagrant and vmware (uncomment if you use vmware)
 ; nat_adapter=Ethernet0
