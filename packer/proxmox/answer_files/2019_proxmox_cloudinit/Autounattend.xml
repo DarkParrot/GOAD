@@ -110,10 +110,10 @@
             <SetupUILanguage>
                 <UILanguage>en-US</UILanguage>
             </SetupUILanguage>
-            <InputLocale>fr-FR</InputLocale>
+            <InputLocale>de-DE</InputLocale>
             <SystemLocale>en-US</SystemLocale>
             <UILanguage>en-US</UILanguage>
-            <UILanguageFallback>fr-FR</UILanguageFallback>
+            <UILanguageFallback>de-DE</UILanguageFallback>
             <UserLocale>en-US</UserLocale>
         </component>
     </settings>
