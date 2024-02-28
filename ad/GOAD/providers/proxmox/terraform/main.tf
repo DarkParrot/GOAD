@@ -1,26 +1,22 @@
 terraform {
   required_providers {
     proxmox = {
-      source = "telmate/proxmox"
-      version = ">=1.0.0"
+      source  = "bpg/proxmox"
+      version = "0.46.3"
     }
   }
 }
 
 provider "proxmox" {
-    pm_api_url = var.pm_api_url
-    pm_user = var.pm_user
-    pm_password = var.pm_password
-    pm_debug = true
-    pm_tls_insecure = true
-    pm_parallel = 3
-    pm_timeout = 2400
+  endpoint = var.pm_api_url
+  username = var.pm_user
+  password = var.pm_password
+  insecure = true
 
-    pm_log_enable = true
-    pm_log_file = "terraform-plugin-proxmox.log"
-    pm_log_levels = {
-      _default = "debug"
-      _capturelog = ""
-    }
+  # ssh {
+  #   agent = true
+  #   # TODO: uncomment and configure if using api_token instead of password
+  #   # username = "root"
+  # }
 
 }
