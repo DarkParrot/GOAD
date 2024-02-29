@@ -1,8 +1,8 @@
 #- name: Windows | Add the fr keyboard layout
 #  win_shell: $langList = Get-WinUserLanguageList; $langList.Add("{{layout}}"); Set-WinUserLanguageList -LanguageList $langList -Force
-- name: Windows | Set specific keyboard layouts
-  win_shell: |
-    $langList = New-Object System.Collections.Generic.List[System.Globalization.Cultureinfo]
-    $langList.Add((New-Object System.Globalization.CultureInfo("{{layout}}")))
-    $langList.Add((New-Object System.Globalization.CultureInfo("en-US"))) # Add English (United States)
-    Set-WinUserLanguageList $langList -Force
+#- name: Windows | Set specific keyboard layouts
+#  win_shell: |
+#    $langList = New-Object System.Collections.Generic.List[System.Globalization.Cultureinfo]
+#    $langList.Add((New-Object System.Globalization.CultureInfo("{{layout}}")))
+#    $langList.Add((New-Object System.Globalization.CultureInfo("en-US"))) # Add English (United States)
+#    Set-WinUserLanguageList $langList -Force
