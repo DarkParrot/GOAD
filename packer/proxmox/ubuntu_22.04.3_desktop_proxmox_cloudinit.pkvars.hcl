@@ -1,0 +1,13 @@
+winrm_username        = "vagrant" # ?
+winrm_password        = "vagrant" # ?
+vm_name               = "Ubuntu-Desktop-cloudinit-qcow2"
+template_description  = "Ubuntu Desktop 22.04.3 64-bit - build 17763.737.190906-2324 - template built with Packer - cloudinit - {{isotime \"2006-01-02 03:04:05\"}}"
+iso_file              = "local:iso/ubuntu-22.04.3-desktop-amd64.iso"
+autounattend_iso      = "./iso/Autounattend_winserver2019_cloudinit.iso" # TBD
+autounattend_checksum = "sha256:2b3eeb1346c38a3ef5e4daefcf58d212471db7c8a95dd3dff831b78aaa246e8e" # TBD
+vm_cpu_cores          = "2"
+vm_memory             = "4096"
+vm_disk_size          = "40G"
+vm_sockets            = "1"
+os                    = "ubuntu" #Needs to be changed somewhere
+vm_disk_format        = "qcow2"
