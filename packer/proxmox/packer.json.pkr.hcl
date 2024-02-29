@@ -130,7 +130,7 @@ build {
   }
 }
 
-buil {
+build {
   sources = ["source.proxmox-iso.ubuntu"]
 
   provisioner "shell" {
