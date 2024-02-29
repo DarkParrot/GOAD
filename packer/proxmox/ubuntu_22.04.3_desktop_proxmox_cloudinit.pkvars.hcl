@@ -1,5 +1,3 @@
-winrm_username        = "vagrant" # ?
-winrm_password        = "vagrant" # ?
 vm_name               = "Ubuntu-Desktop-cloudinit-qcow2"
 template_description  = "Ubuntu Desktop 22.04.3 64-bit - build 17763.737.190906-2324 - template built with Packer - cloudinit - {{isotime \"2006-01-02 03:04:05\"}}"
 iso_file              = "local:iso/ubuntu-22.04.3-desktop-amd64.iso"
@@ -9,5 +7,5 @@ vm_cpu_cores          = "2"
 vm_memory             = "4096"
 vm_disk_size          = "40G"
 vm_sockets            = "1"
-os                    = "ubuntu" #Needs to be changed somewhere
+os                    = "ubuntu"
 vm_disk_format        = "qcow2"
