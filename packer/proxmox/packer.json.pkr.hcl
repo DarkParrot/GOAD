@@ -128,7 +128,9 @@ build {
     pause_before      = "1m0s"
     scripts           = ["${path.root}/scripts/sysprep/cloudbase-init-p2.ps1"]
   }
+}
 
+buil {
   sources = ["source.proxmox-iso.ubuntu"]
 
   provisioner "shell" {
