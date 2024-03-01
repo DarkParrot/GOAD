@@ -19,7 +19,8 @@ autoinstall:
     timezone: Europe/Paris
     users:
       - name: ubuntu
-        passwd: password
+        passwd: ubuntu
+
         groups: [adm, cdrom, dip, plugdev, lxd, sudo]
         lock-passwd: false
         sudo: ALL=(ALL) NOPASSWD:ALL
