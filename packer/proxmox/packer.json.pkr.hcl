@@ -65,13 +65,6 @@ source "proxmox-iso" "windows" {
 
 source "proxmox-iso" "ubuntu" {
   additional_iso_files {
-    device           = "sata3"
-    iso_checksum     = "${var.autounattend_checksum}"
-    iso_storage_pool = "local"
-    iso_url          = "${var.autounattend_iso}"
-    unmount          = true
-  }
-  additional_iso_files {
     device   = "sata4"
     iso_file = "local:iso/virtio-win.iso"
     unmount  = true
