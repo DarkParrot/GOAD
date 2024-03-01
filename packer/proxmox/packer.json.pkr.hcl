@@ -86,11 +86,12 @@ source "proxmox-iso" "ubuntu" {
   }
   insecure_skip_tls_verify = "${var.proxmox_skip_tls_verify}"
   iso_file                 = "${var.iso_file}"
+  iso_checksum             = "${var.iso_checksum}"
+  iso_storage_pool         = "${var.iso_storage_pool}"
   memory                   = "${var.vm_memory}"
   network_adapters {
-    bridge = "vmbr3"
+    bridge = "vmbr0"
     model  = "virtio"
-    vlan_tag = "10"
   }
   node                 = "${var.proxmox_node}"
   os                   = "${var.os}"
@@ -103,6 +104,9 @@ source "proxmox-iso" "ubuntu" {
   username             = "${var.proxmox_username}"
   vm_name              = "${var.vm_name}"
   task_timeout         = "40m"
+  ssh_password         = "${var.vm_ssh_password}"
+  ssh_username         = "${var.vm_ssh_user}"
+  ssh_timeout          = "15m"
 }
 
 
