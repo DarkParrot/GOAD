@@ -20,7 +20,6 @@ autoinstall:
     users:
       - name: ubuntu
         passwd: ubuntu
-
         groups: [adm, cdrom, dip, plugdev, lxd, sudo]
         lock-passwd: false
         sudo: ALL=(ALL) NOPASSWD:ALL
