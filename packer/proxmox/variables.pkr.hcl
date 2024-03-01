@@ -19,7 +19,3 @@ variable "vm_disk_size" {}
 variable "vm_disk_format" {}
 variable "vm_sockets" {}
 variable "os" {}
-variable "vm_ssh_user" {}
-variable "vm_ssh_password" {}
-variable "iso_url" {}
-variable "iso_checksum" {}
