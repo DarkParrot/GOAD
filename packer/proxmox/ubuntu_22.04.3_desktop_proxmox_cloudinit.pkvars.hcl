@@ -1,11 +1,12 @@
 vm_name               = "Ubuntu-Desktop-cloudinit-qcow2"
-template_description  = "Ubuntu Desktop 22.04.3 64-bit - build 17763.737.190906-2324 - template built with Packer - cloudinit - {{isotime \"2006-01-02 03:04:05\"}}"
+template_description  = "Ubuntu Desktop 22.04.3 64-bit - template built with Packer - cloudinit - {{isotime \"2006-01-02 03:04:05\"}}"
 iso_file              = "local:iso/ubuntu-22.04.3-desktop-amd64.iso"
-autounattend_iso      = "./iso/Autounattend_winserver2019_cloudinit.iso" # TBD
-autounattend_checksum = "sha256:2b3eeb1346c38a3ef5e4daefcf58d212471db7c8a95dd3dff831b78aaa246e8e" # TBD
+iso_checksum          = "sha256:a435f6f393dda581172490eda9f683c32e495158a780b5a1de422ee77d98e909"
 vm_cpu_cores          = "2"
 vm_memory             = "4096"
-vm_disk_size          = "40G"
+vm_disk_size          = "100G"
 vm_sockets            = "1"
-os                    = "ubuntu"
+os                    = "l26"
 vm_disk_format        = "qcow2"
+vm_ssh_user           = "root"
+vm_ssh_password       = "password"
