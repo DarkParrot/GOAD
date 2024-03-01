@@ -69,11 +69,6 @@ source "proxmox-iso" "ubuntu" {
     iso_file = "local:iso/virtio-win.iso"
     unmount  = true
   }
-  additional_iso_files {
-    device   = "sata5"
-    iso_file = "local:iso/scripts_withcloudinit.iso"
-    unmount  = true
-  }
   cloud_init              = true
   cloud_init_storage_pool = "${var.proxmox_iso_storage}"
   #communicator            = "winrm"
