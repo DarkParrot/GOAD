@@ -82,7 +82,7 @@ source "proxmox-iso" "ubuntu" {
   insecure_skip_tls_verify = "${var.proxmox_skip_tls_verify}"
   iso_file                 = "${var.iso_file}"
   iso_checksum             = "${var.iso_checksum}"
-  iso_storage_pool         = "${var.iso_storage_pool}"
+  iso_storage_pool         = "${var.proxmox_vm_storage}"
   memory                   = "${var.vm_memory}"
   network_adapters {
     bridge = "vmbr0"
