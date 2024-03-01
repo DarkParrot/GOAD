@@ -102,6 +102,13 @@ source "proxmox-iso" "ubuntu" {
   ssh_password         = "${var.vm_ssh_password}"
   ssh_username         = "${var.vm_ssh_user}"
   ssh_timeout          = "15m"
+  unmount_iso          = true
+  http_directory       = "http"
+  boot_command         = ["c",
+    "linux /casper/vmlinuz --- autoinstall ds='nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/' ",
+    "<enter><wait>",
+    "initrd /casper/initrd<enter><wait>",
+    "boot<enter>"]
 }
 
 
