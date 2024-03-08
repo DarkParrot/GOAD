@@ -75,13 +75,13 @@
     data: 1433
   register: win_reg
 
-# - name: Add or update registry for named pipe
-#   win_regedit:
-#     path: 'HKLM:\Software\Microsoft\Microsoft SQL Server\MSSQL15.{{ sql_instance_name }}\MSSQLServer\SuperSocketNetLib\Np'
-#     name: Enabled
-#     data: 0x00000001
-#     type: dword
-#   register: win_reg
+ - name: Add or update registry for named pipe
+   win_regedit:
+     path: 'HKLM:\Software\Microsoft\Microsoft SQL Server\MSSQL15.{{ sql_instance_name }}\MSSQLServer\SuperSocketNetLib\Np'
+     name: Enabled
+     data: 0x00000001
+     type: dword
+   register: win_reg
 
 - name: Restart a service
   win_service:
