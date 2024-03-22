@@ -1,0 +1,19 @@
+---
+# Load datas
+- import_playbook: data.yml
+  vars:
+    data_path: "../ad/{{domain_name}}/data/"
+  tags: 'data'
+
+# Set firewall rules
+- name: Firewall rule to allow RDP on TCP port 3389
+  hosts: domain
+  community.windows.win_firewall_rule:
+    name: Remote Desktop
+    localport: 3389
+    action: allow
+    direction: in
+    protocol: tcp
+    profiles: private
+    state: present
+    enabled: yes
