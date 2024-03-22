@@ -60,6 +60,7 @@
     IPAddresses:
       - "1.1.1.1"
       - "9.9.9.9"
+      - "192.168.178.10"
 
 #- name: install nuget
 #  win_shell: install-packageprovider -name nuget -force
