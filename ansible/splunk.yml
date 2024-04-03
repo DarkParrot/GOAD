@@ -7,7 +7,7 @@
   
 # Install splunk
 - name: Install software
-  hosts: mygroup
+  hosts: domain
   gather_facts: false
   tasks:
     - name: Install Splunk Forwarder
