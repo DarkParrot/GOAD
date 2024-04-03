@@ -1,0 +1,9 @@
+---
+- name: Install software
+  hosts: mygroup
+  gather_facts: false
+  tasks:
+    - name: Install Splunk Forwarder
+      win_chocolatey:
+        name: splunk-universalforwarder
+        state: present
