@@ -57,3 +57,9 @@ ansible_ssh_private_key_file=./.vagrant/machines/elk/virtualbox/private_key
 ansible_ssh_port=22
 host_key_checking=false
 
+[splunk:vars]
+ansible_user=ansible
+ansible_password=ansible
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
